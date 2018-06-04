@@ -1,0 +1,26 @@
+menu "Mongoose"
+
+choice
+    prompt "Mongoose TLS support"
+    default MONGOOSE_TLS_MBEDTLS
+    
+    config MONGOOSE_TLS_NONE
+        bool "None"
+    help
+        Disable TLS support
+
+    config MONGOOSE_TLS_OPENSSL
+        bool "OpenSSL"
+        select MBEDTLS_KEY_EXCHANGE_PSK
+    help
+        Use OpenSSL API
+
+    config MONGOOSE_TLS_MBEDTLS
+        select MBEDTLS_KEY_EXCHANGE_PSK
+        bool "mbedTLS"
+    help
+        Use mbedTLS API
+endchoice
+
+
+endmenu

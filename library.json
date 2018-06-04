@@ -1,0 +1,22 @@
+{
+    "name": "mongoose_espidf",
+    "keywords": "mongoose, http, https, tls, webserver, websocket, esp-idf",
+    "description": "Mongoose ESP-IDF component",
+    "repository":
+    {
+      "type": "git",
+      "url": "https://github.com/infincia/mongoose_espidf.git"
+    },
+    "authors":
+    [
+      {
+        "name": "Stephen Oliver",
+        "email": "steve@infincia.com",
+        "url": "https://infincia.com",
+        "maintainer": true
+      }
+    ],
+    "version": "0.1.0",
+    "frameworks": "espidf",
+    "platforms": "espressif32"
+  }
